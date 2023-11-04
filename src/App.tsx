@@ -2,7 +2,10 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-import { sprinkles } from "./foo.css.ts";
+import { foo1 } from "./foo1.css.ts";
+import { foo2 } from "./foo2.css.ts";
+import { foo3 } from "./foo3.css.ts";
+import { foo4 } from "./foo4.css.ts";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -17,7 +20,7 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1 className={sprinkles({ paddingTop: "bloat1" })}>Vite + React</h1>
+      <h1 className={[foo1, foo2, foo3, foo4].join(" ")}>Vite + React</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
