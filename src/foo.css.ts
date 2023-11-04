@@ -9,22 +9,24 @@ const createBloat = (n: number) => {
   return bloat;
 };
 
+const bloat1000 = createBloat(1000);
+
 const foo = defineProperties({
-  defaultCondition: "xxs",
+  defaultCondition: "default",
   conditions: {
-    xxs: {},
-    xs: { "@media": "screen and (min-width: 2px)" },
-    s: { "@media": "screen and (min-width: 3px)" },
-    m: { "@media": "screen and (min-width: 4px)" },
-    l: { "@media": "screen and (min-width: 5px)" },
-    xl: { "@media": "screen and (min-width: 6px)" },
-    xxl: { "@media": "screen and (min-width: 7px)" },
+    default: {},
+    hover: { selector: "&:hover" },
+    focus: { selector: "&:focus" },
+    enabled: { selector: "&:enabled" },
+    disabled: { selector: "&:disabled" },
+    valid: { selector: "&:valid" },
+    invalid: { selector: "&:invalid" },
   },
   properties: {
-    paddingTop: createBloat(1000),
-    paddingBottom: createBloat(1000),
-    paddingLeft: createBloat(1000),
-    paddingRight: createBloat(1000),
+    paddingTop: bloat1000,
+    paddingBottom: bloat1000,
+    paddingLeft: bloat1000,
+    paddingRight: bloat1000,
   },
 });
 
