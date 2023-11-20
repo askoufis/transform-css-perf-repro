@@ -1,39 +1,16 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
-import { foo1 } from "./foo1.css.ts";
-import { foo2 } from "./foo2.css.ts";
-import { foo3 } from "./foo3.css.ts";
-import { foo4 } from "./foo4.css.ts";
+import { Button1 } from "./components/Button1";
+import { Button2 } from "./components/Button2";
+import { Button3 } from "./components/Button3";
+import { Button4 } from "./components/Button4";
 
-function App() {
-  const [count, setCount] = useState(0);
-
+// Uncomment some buttons and restart the dev server to see slower initial load times as the sprinkles file is processed multiple times
+export const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1 className={[foo1, foo2, foo3, foo4].join(" ")}>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div>
+      <Button1>1</Button1>
+      <Button2>2</Button2>
+      <Button3>3</Button3>
+      <Button4>4</Button4>
+    </div>
   );
-}
-
-export default App;
+};

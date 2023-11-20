@@ -3,13 +3,16 @@ import { createSprinkles, defineProperties } from "@vanilla-extract/sprinkles";
 // create n properties with n values ending in px
 const createBloat = (n: number) => {
   const bloat: Record<string, string> = {};
+
   for (let i = 0; i < n; i++) {
-    bloat[`bloat${i}`] = `${i}px`;
+    const keyAndValue = `${i}px`;
+    bloat[keyAndValue] = keyAndValue;
   }
+
   return bloat;
 };
 
-const bloat1000 = createBloat(1000);
+const bloat500 = createBloat(500);
 
 const foo = defineProperties({
   defaultCondition: "default",
@@ -23,10 +26,14 @@ const foo = defineProperties({
     invalid: { selector: "&:invalid" },
   },
   properties: {
-    paddingTop: bloat1000,
-    paddingBottom: bloat1000,
-    paddingLeft: bloat1000,
-    paddingRight: bloat1000,
+    paddingTop: bloat500,
+    paddingBottom: bloat500,
+    paddingLeft: bloat500,
+    paddingRight: bloat500,
+    marginTop: bloat500,
+    marginBottom: bloat500,
+    marginLeft: bloat500,
+    marginRight: bloat500,
   },
 });
 
