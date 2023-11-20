@@ -8,9 +8,9 @@ export const App = () => {
   return (
     <div>
       <Button1>1</Button1>
-      <Button2>2</Button2>
-      <Button3>3</Button3>
-      <Button4>4</Button4>
+      {/* <Button2>2</Button2> */}
+      {/* <Button3>3</Button3> */}
+      {/* <Button4>4</Button4> */}
     </div>
   );
 };
