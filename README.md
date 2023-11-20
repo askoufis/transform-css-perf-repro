@@ -16,6 +16,9 @@ Notice that the initial load takes a decent amount of time, approx. 5s.
 
 Uncomment all the `Button` components in `src/App.tsx` and restart the dev server to see the initial page load slow down to >10s.
 
+Swapping to the `runtime-sprinkles` branch, we can see that using sprinkles at runtime within the component definition results in no bottleneck.
+The sprinkles file is only compiled once.
+
 ## Expectation
 
 Ideally the sprinkle file should only be compiled once by `vite-node`, however it seems to re-process it once for each component.
