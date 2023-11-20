@@ -4,11 +4,6 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-patchedDependencies:
-  '@vanilla-extract/integration@6.2.3':
-    hash: cpamgyttofzhdgd6753d5r2ibm
-    path: patches/@vanilla-extract__integration@6.2.3.patch
-
 dependencies:
   react:
     specifier: ^18.2.0
@@ -1406,8 +1401,8 @@ packages:
       outdent: 0.8.0
     dev: true
 
-  /@vanilla-extract/integration@6.2.3(patch_hash=cpamgyttofzhdgd6753d5r2ibm):
-    resolution: {integrity: sha512-Ix7xCClFlERl3ZwPuqHCOTyat8Wq5LQVRaGI+1i0HUagu+vtUvrDXUPLF0gCtdBGvnypD3QuYx6lLz3sV2H/ZA==}
+  /@vanilla-extract/integration@6.2.4:
+    resolution: {integrity: sha512-+AfymNMVq9sEUe0OJpdCokmPZg4Zi6CqKaW/PnUOfDwEn53ighHOMOBl5hAgxYR8Kiz9NG43Bn00mkjWlFi+ng==}
     dependencies:
       '@babel/core': 7.23.3
       '@babel/plugin-syntax-typescript': 7.23.3(@babel/core@7.23.3)
@@ -1432,7 +1427,6 @@ packages:
       - supports-color
       - terser
     dev: true
-    patched: true
 
   /@vanilla-extract/private@1.0.3:
     resolution: {integrity: sha512-17kVyLq3ePTKOkveHxXuIJZtGYs+cSoev7BlP+Lf4916qfDhk/HBjvlYDe8egrea7LNPHKwSZJK/bzZC+Q6AwQ==}
@@ -1451,7 +1445,7 @@ packages:
     peerDependencies:
       vite: ^2.2.3 || ^3.0.0 || ^4.0.3
     dependencies:
-      '@vanilla-extract/integration': 6.2.3(patch_hash=cpamgyttofzhdgd6753d5r2ibm)
+      '@vanilla-extract/integration': 6.2.4
       outdent: 0.8.0
       postcss: 8.4.31
       postcss-load-config: 4.0.2(postcss@8.4.31)

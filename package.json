@@ -27,10 +27,5 @@
     "eslint-plugin-react-refresh": "^0.4.4",
     "typescript": "^5.2.2",
     "vite": "^5.0.0"
-  },
-  "pnpm": {
-    "patchedDependencies": {
-      "@vanilla-extract/integration@6.2.3": "patches/@vanilla-extract__integration@6.2.3.patch"
-    }
   }
 }
